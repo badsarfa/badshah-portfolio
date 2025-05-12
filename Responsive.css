@@ -1,0 +1,92 @@
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    background: #000000; /* या आपकी थीम */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+  }
+
+  .navbar.show {
+    display: flex;
+  }
+
+  .home {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .home-content, .home-img {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .home-img img{
+    width: 100%;
+    height: auto;
+  }
+
+  .About {
+    flex-direction: column;
+    text-align: center;
+    /* justify-content: center; */
+  }
+
+  .About-img  {
+    width: 100%;
+  }
+
+  .Resume-section {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .contact {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  } 
+
+  .Work-content {
+    padding: 0 10px;
+  }
+
+  .contact-text p {
+    line-height: 1.1;
+  }
+
+  .About-text p{
+   font-weight: 400;
+    
+  }
+
+}
+
+@media (max-width: 479px) {
+    .home{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+
+    .home-img img{
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+    }
+
+    .home-content{
+        text-align: center;
+    }
+
+}
